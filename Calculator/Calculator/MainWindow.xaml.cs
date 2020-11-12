@@ -75,6 +75,14 @@ namespace Calculator
                             textTwo.Text = finalSumMult;
                             textOne.Text = " ";
                         }
+                        else if (textOne.Text.Contains("/"))
+                        {
+                            var strDiv = textOne.Text.Split('/');
+                            var sumDiv = Int32.Parse(strDiv[0]) / Int32.Parse(strDiv[1]);
+                            var finalSumDiv = sumDiv.ToString();
+                            textTwo.Text = finalSumDiv;
+                            textOne.Text = " ";
+                        }
                         break;
 
                     default:
