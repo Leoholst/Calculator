@@ -45,7 +45,11 @@ namespace Calculator
                     case "-":
                     case "+":
                     case "*":
+                        textOne.Text += button.Content;
+                        break;
                     case "C":
+                        textOne.Text = " ";
+                        break;
                     case "Exe":
                         
                     default:
