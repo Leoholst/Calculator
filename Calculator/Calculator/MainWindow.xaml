@@ -22,5 +22,15 @@
         </Grid.RowDefinitions>
         <TextBlock Name="textOne" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="0" Text="" FontSize="40" TextAlignment="Left"/>
         <TextBlock Name="textTwo" Grid.ColumnSpan="1" Grid.Column="3" Grid.Row="0" Text="" FontSize="40" TextAlignment="Left"/>
+        <Button Grid.Column="0" Grid.Row="3" Height="100" Width="300" Name="buttonOne" Click="Button_One_Click">1</Button>
+        <Button Grid.Column="1" Grid.Row="3" Height="100" Width="300" Name="buttonTwo" Click="Button_One_Click">2</Button>
+        <Button Grid.Column="2" Grid.Row="3" Height="100" Width="300" Name="buttonThree" Click="Button_One_Click">3</Button>
+        <Button Grid.Column="0" Grid.Row="2" Height="100" Width="300" Name="buttonFour" Click="Button_One_Click">4</Button>
+        <Button Grid.Column="1" Grid.Row="2" Height="100" Width="300" Name="buttonFive" Click="Button_One_Click">5</Button>
+        <Button Grid.Column="2" Grid.Row="2" Height="100" Width="300" Name="buttonSix" Click="Button_One_Click">6</Button>
+        <Button Grid.Column="0" Grid.Row="1" Height="100" Width="300" Name="buttonSeven" Click="Button_One_Click">7</Button>
+        <Button Grid.Column="1" Grid.Row="1" Height="100" Width="300" Name="buttonEight" Click="Button_One_Click">8</Button>
+        <Button Grid.Column="2" Grid.Row="1" Height="100" Width="300" Name="buttonNine" Click="Button_One_Click">9</Button>
+        <Button Grid.Column="1" Grid.Row="4" Height="100" Width="300" Name="buttonZero" Click="Button_One_Click">0</Button>
     </Grid>
 </Window>
