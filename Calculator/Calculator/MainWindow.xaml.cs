@@ -67,6 +67,14 @@ namespace Calculator
                             textTwo.Text = finalSumSub;
                             textOne.Text = " ";
                         }
+                        else if (textOne.Text.Contains("*"))
+                        {
+                            var strMult = textOne.Text.Split('*');
+                            var sumMult = Int32.Parse(strMult[0]) * Int32.Parse(strMult[1]);
+                            var finalSumMult = sumMult.ToString();
+                            textTwo.Text = finalSumMult;
+                            textOne.Text = " ";
+                        }
                         break;
 
                     default:
