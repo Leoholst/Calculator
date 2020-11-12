@@ -20,5 +20,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <TextBlock Name="textOne" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="0" Text="" FontSize="40" TextAlignment="Left"/>
+        <TextBlock Name="textTwo" Grid.ColumnSpan="1" Grid.Column="3" Grid.Row="0" Text="" FontSize="40" TextAlignment="Left"/>
     </Grid>
 </Window>
