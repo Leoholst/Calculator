@@ -51,7 +51,16 @@ namespace Calculator
                         textOne.Text = " ";
                         break;
                     case "Exe":
-                        
+                        if (textOne.Text.Contains("+"))
+                        {
+                            var strAdd = textOne.Text.Split('+');
+                            var sumAdd = Int32.Parse(strAdd[0]) + Int32.Parse(strAdd[1]);
+                            var finalSumAdd = sumAdd.ToString();
+                            textTwo.Text = finalSumAdd;
+                            textOne.Text = " ";
+                        }
+                        break;
+
                     default:
                         break;
                 }
