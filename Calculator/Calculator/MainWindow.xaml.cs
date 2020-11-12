@@ -59,6 +59,14 @@ namespace Calculator
                             textTwo.Text = finalSumAdd;
                             textOne.Text = " ";
                         }
+                        else if (textOne.Text.Contains("-"))
+                        {
+                            var strSub = textOne.Text.Split('-');
+                            var sumSub = Int32.Parse(strSub[0]) - Int32.Parse(strSub[1]);
+                            var finalSumSub = sumSub.ToString();
+                            textTwo.Text = finalSumSub;
+                            textOne.Text = " ";
+                        }
                         break;
 
                     default:
