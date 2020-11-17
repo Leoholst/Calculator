@@ -41,10 +41,10 @@ namespace Calculator
                     case "7":
                     case "8":
                     case "9":
-                    case "/":
+                    case "÷":
                     case "-":
                     case "+":
-                    case "*":
+                    case "x":
                         textOne.Text += button.Content;
                         break;
                     case "C":
@@ -67,18 +67,18 @@ namespace Calculator
                             textTwo.Text = finalSumSub;
                             textOne.Text = " ";
                         }
-                        else if (textOne.Text.Contains("*"))
+                        else if (textOne.Text.Contains("x"))
                         {
-                            var strMult = textOne.Text.Split('*');
+                            var strMult = textOne.Text.Split('x');
                             var sumMult = Int32.Parse(strMult[0]) * Int32.Parse(strMult[1]);
                             var finalSumMult = sumMult.ToString();
                             textTwo.Text = finalSumMult;
                             textOne.Text = " ";
                         }
-                        else if (textOne.Text.Contains("/"))
+                        else if (textOne.Text.Contains("÷"))
                         {
-                            var strDiv = textOne.Text.Split('/');
-                            var sumDiv = Int32.Parse(strDiv[0]) / Int32.Parse(strDiv[1]);
+                            var strDiv = textOne.Text.Split('÷');
+                            var sumDiv = float.Parse(strDiv[0]) / float.Parse(strDiv[1]);
                             var finalSumDiv = sumDiv.ToString();
                             textTwo.Text = finalSumDiv;
                             textOne.Text = " ";
