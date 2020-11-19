@@ -45,43 +45,43 @@ namespace Calculator
                     case "-":
                     case "+":
                     case "x":
-                        textOne.Text += button.Content;
+                        textIn.Text += button.Content;
                         break;
                     case "C":
-                        textOne.Text = " ";
+                        textIn.Text = " ";
                         break;
                     case "Exe":
-                        if (textOne.Text.Contains("+"))
+                        if (textIn.Text.Contains("+"))
                         {
-                            var strAdd = textOne.Text.Split('+');
+                            var strAdd = textIn.Text.Split('+');
                             var sumAdd = Int32.Parse(strAdd[0]) + Int32.Parse(strAdd[1]);
                             var finalSumAdd = sumAdd.ToString();
-                            textTwo.Text = finalSumAdd;
-                            textOne.Text = " ";
+                            textOut.Text = finalSumAdd;
+                            textIn.Text = " ";
                         }
-                        else if (textOne.Text.Contains("-"))
+                        else if (textIn.Text.Contains("-"))
                         {
-                            var strSub = textOne.Text.Split('-');
+                            var strSub = textIn.Text.Split('-');
                             var sumSub = Int32.Parse(strSub[0]) - Int32.Parse(strSub[1]);
                             var finalSumSub = sumSub.ToString();
-                            textTwo.Text = finalSumSub;
-                            textOne.Text = " ";
+                            textOut.Text = finalSumSub;
+                            textIn.Text = " ";
                         }
-                        else if (textOne.Text.Contains("x"))
+                        else if (textIn.Text.Contains("x"))
                         {
-                            var strMult = textOne.Text.Split('x');
+                            var strMult = textIn.Text.Split('x');
                             var sumMult = Int32.Parse(strMult[0]) * Int32.Parse(strMult[1]);
                             var finalSumMult = sumMult.ToString();
-                            textTwo.Text = finalSumMult;
-                            textOne.Text = " ";
+                            textOut.Text = finalSumMult;
+                            textIn.Text = " ";
                         }
-                        else if (textOne.Text.Contains("÷"))
+                        else if (textIn.Text.Contains("÷"))
                         {
-                            var strDiv = textOne.Text.Split('÷');
+                            var strDiv = textIn.Text.Split('÷');
                             var sumDiv = float.Parse(strDiv[0]) / float.Parse(strDiv[1]);
                             var finalSumDiv = sumDiv.ToString();
-                            textTwo.Text = finalSumDiv;
-                            textOne.Text = " ";
+                            textOut.Text = finalSumDiv;
+                            textIn.Text = " ";
                         }
                         break;
 
